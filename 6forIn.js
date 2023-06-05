@@ -5,5 +5,11 @@ for (const i in arr) {
     //     let element = arr[i];
     //     console.log('element', element);
     // }
+
+
+    
         console.log('name ', arr[i]);
 }
+
+
+
