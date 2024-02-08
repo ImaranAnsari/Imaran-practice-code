@@ -3,13 +3,15 @@
 
 
 function runningSum(ary) {
-
+    console.log('', ary);
     let ans = new Array(ary.length);
-    ans[0] = ary[0]
+    // ans[0] = ary[0]
 
-    for (let i = 0; i <= ary.length - 1; i++) {
+    for (let i = 0; i < ary.length; i++) {
 
+        console.log('bfr', ans[i]);
         ans[i] = ans[i - 1] + ary[i];
+        console.log("aftr", ans[i]);
 
     }
     return ans
