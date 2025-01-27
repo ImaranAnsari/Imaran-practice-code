@@ -1,13 +1,11 @@
-const dauble = () => {
+const double = () => {
+    let a;
+    let n = 1;
     for (let i = 1; i <= 10; i++) {
-        // const a = i;
-        console.log(i * i);
-        for (let j = i; j <= i; j++) {
+        a = n;
+        n = n * 2;
+        console.log(a);
+    };
+};
 
-            // const d = j * j * 2;
-            // console.log('d', d);
-        }
-    }
-}
-
-dauble();
+double();
