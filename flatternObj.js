@@ -22,9 +22,9 @@ const obj = {
 //         'company.location.city': 'Bangalore'
 // }
 
-function flattern(obj, parantKey = "", result = {}) {
+function flattern(obj, parentKey = "", result = {}) {
     for (let key in obj) {
-        const newKey = parantKey ? `${parantKey}.${key}` : key;
+        const newKey = parentKey ? `${parentKey}.${key}` : key;
         if (typeof obj[key] === "object" && obj[key] !== null && !Array.isArray(obj[key])) {
             flattern(obj[key], newKey, result);
         } else {
